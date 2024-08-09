@@ -2,7 +2,7 @@
 <div align="center">
     <a><img width="600" src="images/FER-2013.jpeg" alt="soft"></a>
 </div>
-This code implements a facial expression recognition model using the Keras framework with TensorFlow. Here's a detailed explanation of each step in the code:
+This code [ facial-expression-recognition ( build and save model ).ipynb ] implements a facial expression recognition model using the FER-2013 dataset.
 
 ### Importing Libraries
 ```python
@@ -61,6 +61,7 @@ These lines create generators to iterate over the training and validation images
 <div align="center">
     <a><img width="600" src="images/img_0.jpg" alt="soft"></a>
 </div>
+
 ### Creating the CNN Model
 ```python
 model = Sequential()
@@ -138,6 +139,7 @@ These lines generate plots showing the evolution of the model's accuracy and los
 <div align="center">
     <a><img width="600" src="images/learning_curve.png" alt="soft"></a>
 </div>
+
 ### Evaluating the Model
 ```python
 eval_result = model.evaluate(validation_generator, steps=validation_steps)
@@ -192,24 +194,13 @@ The confusion matrix is plotted to visualize the model's classification errors.
 <div align="center">
     <a><img width="600" src="images/confusion_matrix.png" alt="soft"></a>
 </div>
-### Saving the Model
-```python
-model.save('/kaggle/working/model_file_10.h5')
-```
-The trained model is saved as `model_file_10.h5` for later use.
 
 ---
 
-In summary, this code develops a facial expression recognition model using CNN, trains it, evaluates it, and saves the trained model.
-
-
 ***
 
-***
+This code [ main.py ] implements a real-time facial expression detection and recognition application from a video stream (e.g., a webcam). The model used for facial expression recognition has been previously trained and saved in a file called `model_file_10epochs.h5`.
 
-This code implements a real-time facial expression detection and recognition application from a video stream (e.g., a webcam). The model used for facial expression recognition has been previously trained and saved in a file called `model_file_30epochs.h5`.
-
-Here is a detailed explanation of the code:
 
 ### Importing Libraries
 ```python
