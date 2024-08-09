@@ -299,3 +299,13 @@ cv2.destroyAllWindows()
 
 ### Summary
 This code uses a real-time video stream to detect faces, predict their facial expressions using a pre-trained CNN model, display the results on the video in real-time, and save the video to an MP4 file.
+
+### Input:
+<div align="center">
+    <a><img width="600" src="images/input.jpg" alt="soft"></a>
+</div>
+
+### Output:
+<div align="center">
+    <a><img width="600" src="images/output.jpg" alt="soft"></a>
+</div>
