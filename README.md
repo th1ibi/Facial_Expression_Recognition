@@ -58,7 +58,9 @@ validation_generator = validation_datagen.flow_from_directory(
 )
 ```
 These lines create generators to iterate over the training and validation images in batches. The images are converted to grayscale and resized to 48x48 pixels.
-
+<div align="center">
+    <a><img width="600" src="images/img_0.jpg" alt="soft"></a>
+</div>
 ### Creating the CNN Model
 ```python
 model = Sequential()
@@ -133,7 +135,9 @@ plt.tight_layout()
 plt.show()
 ```
 These lines generate plots showing the evolution of the model's accuracy and loss during training and validation.
-
+<div align="center">
+    <a><img width="600" src="images/learning_curve.png" alt="soft"></a>
+</div>
 ### Evaluating the Model
 ```python
 eval_result = model.evaluate(validation_generator, steps=validation_steps)
@@ -153,6 +157,9 @@ print('Classification Report')
 print(classification_report(y_true, y_pred, target_names=class_labels))
 ```
 The model's predictions are compared to the true labels, and a classification report is generated, showing precision, recall, and F1-score for each class.
+<div align="center">
+    <a><img width="600" src="images/classification_report.jpg" alt="soft"></a>
+</div>
 
 ### Confusion Matrix
 ```python
@@ -179,6 +186,12 @@ plt.show()
 ```
 The confusion matrix is plotted to visualize the model's classification errors.
 
+<div align="center">
+    <a><img width="600" src="images/img_1.jpg" alt="soft"></a>
+</div>
+<div align="center">
+    <a><img width="600" src="images/confusion_matrix.png" alt="soft"></a>
+</div>
 ### Saving the Model
 ```python
 model.save('/kaggle/working/model_file_10.h5')
