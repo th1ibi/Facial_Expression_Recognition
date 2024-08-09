@@ -187,7 +187,7 @@ plt.show()
 The confusion matrix is plotted to visualize the model's classification errors.
 
 <div align="center">
-    <a><img width="600" src="images/img_1.jpg" alt="soft"></a>
+    <a><img width="300" src="images/img_1.jpg" alt="soft"></a>
 </div>
 <div align="center">
     <a><img width="600" src="images/confusion_matrix.png" alt="soft"></a>
